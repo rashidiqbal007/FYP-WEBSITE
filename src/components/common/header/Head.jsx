@@ -6,8 +6,8 @@ const Head = () => {
       <section className='head'>
         <div className='container flexSB'>
           <div className='logo'>
-            <h1>OREXOR</h1>
-            <span>ONLINE EDUCATION & LEARNING</span>
+            <h1>VISION-X</h1>
+            <span>WEB APPLICATION FOR HANDICAPS</span>
           </div>
 
           <div className='social'>
