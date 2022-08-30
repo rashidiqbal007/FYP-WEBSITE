@@ -9,11 +9,12 @@ import Blog from "./components/blog/Blog"
 import Contact from "./components/contact/Contact"
 import Footer from "./components/common/footer/Footer"
 import Home from "./components/home/Home"
+import Spa from "./SPA/spa"
 const App = () => {
   return (
     <>
       <Router>
-        <Header />
+        {/* <Header /> */}
         <Switch>
           
           {/* <Route  path='/about'exact component={About} /> */}
@@ -22,9 +23,10 @@ const App = () => {
           <Route  path='/pricing' exact component={Pricing} />
           <Route  path='/journal' exact component={Blog} />
           <Route  path='/contact' exact component={Contact} />
-          <Route  path='/' exact component={Home} />
+          <Route  path='/' exact component={Spa} />
+          
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </>
   )

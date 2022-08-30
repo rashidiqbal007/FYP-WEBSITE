@@ -2,20 +2,20 @@ export const homeAbout = [
   {
     id: 1,
     cover: "https://img.icons8.com/dotty/80/000000/storytelling.png",
-    title: "Online Courses",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    title: "For Dumb and Mute",
+    desc: "Sign Language Detection is used to communicate through Gesture",
   },
   {
     id: 1,
     cover: "https://img.icons8.com/ios/80/000000/diploma.png",
-    title: "Earn A Certificates",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    title: "For Paralyzed Patients",
+    desc: "The proposed system allows the paralyzed users to communicate through blinking of eyes",
   },
   {
     id: 1,
     cover: "https://img.icons8.com/ios/80/000000/athlete.png",
-    title: "Learn with Expert",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    title: "Core Objective",
+    desc: "The core objective of this application is to provide a service to disabled people.",
   },
 ]
 export const awrapper = [
