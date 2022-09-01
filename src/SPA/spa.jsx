@@ -28,6 +28,7 @@ const Spa = () => {
           </div>
 
           <div className='social'>
+          <i className="fab fa-user-secret icon"></i>
             <i className='fab fa-facebook-f icon'></i>
             <i className='fab fa-instagram icon'></i>
             <i className='fab fa-twitter icon'></i>
@@ -43,24 +44,28 @@ const Spa = () => {
               <Link to='/'>Home</Link>
             </li> */}
             <li>
-              <Link to='/courses'>All Courses</Link>
+              
+              <a href="#home">Home</a>
             </li>
             <li>
               <a href="#about">About</a>
-              {/* <Link to='/about'>About</Link> */}
+              
             </li>
             <li>
-              <Link to='/team'>Team</Link>
+            <a href="#courses">Courses</a>
+              
             </li>
             <li>
-              <Link to='/pricing'>Pricing</Link>
+            <a href="#services">Services</a>
+              
             </li>
             <li>
-                <a href="#testimonial">Testimonials</a>
-              {/* <Link href="#testimonial" >Testimonials</Link> */}
+                <a href="#team">Team</a>
+              
             </li>
             <li>
-              <Link to='/contact'>Contact</Link>
+            <a href="#contact">Contact</a>
+              
             </li>
           </ul>
           <div className='start'>
@@ -72,7 +77,7 @@ const Spa = () => {
         </nav>
       </header>
     {/* HERO */}
-    <section className='hero'>
+    <section id = "home" className='hero'>
         <div className='container'>
           <div className='row'>
             <Heading subtitle='WELCOME TO VISION-X' title='EXCEPTIONAL MEDICAL HEALTHCARE' />
@@ -186,7 +191,7 @@ const Spa = () => {
             </div>
           </div>
         </div>
-        <section className='online'>
+        <section id = "services" className='online'>
         <div className='container'>
           <Heading subtitle='SERVICES' title='Explore Our Main Services' />
           <div className='content grid3'>
@@ -197,7 +202,7 @@ const Spa = () => {
                   <img src={val.hoverCover} alt='' className='show' />
                 </div>
                 <h1>{val.courseName}</h1>
-                <span>{val.course}</span>
+                {/* <span>{val.course}</span> */}
               </div>
             ))}
           </div>
@@ -206,9 +211,9 @@ const Spa = () => {
       </section>
       {/* TESTIMONIAL */}
 
-      <section id = "testimonial" className='testimonal padding'>
+      <section id = "team" className='testimonal padding'>
         <div className='container'>
-          <Heading subtitle='TESTIMONIAL' title='Our Successful Students' />
+          <Heading subtitle='TEAM' title='Our Successful Staff' />
 
           <div className='content grid2'>
             {testimonal.map((val) => (
@@ -231,7 +236,7 @@ const Spa = () => {
       </section>
       {/* BLOG */}
       {/* <Back title='Blog Posts' /> */}
-      <section className='blog padding'>
+      {/* <section className='blog padding'>
         <div className='container grid2'>
         {blog.map((val) => (
         <div className='items shadow'>
@@ -259,11 +264,11 @@ const Spa = () => {
         </div>
       ))}
         </div>
-      </section>
+      </section> */}
       {/* Contact Us */}
       
     <Heading subtitle='CONTACT US' title='In Case of Emergency' />
-      <section className='contacts padding'>
+      <section id = "contact"className='contacts padding'>
         <div className='container shadow flexSB'>
           <div className='left row'>
             <iframe src={map}></iframe>
@@ -321,8 +326,8 @@ const Spa = () => {
       <footer>
         <div className='container padding'>
           <div className='box logo'>
-            <h1>ACADEMIA</h1>
-            <span>ONLINE EDUCATION & LEARNING</span>
+            <h1>VISION-X</h1>
+            <span>WEB APPLICATION FOR HANDICAPS</span>
             <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 
             <i className='fab fa-facebook-f icon'></i>
@@ -349,7 +354,7 @@ const Spa = () => {
               <li>Feedbacks</li>
             </ul>
           </div>
-          <div className='box'>
+          {/* <div className='box'>
             <h3>Recent Post</h3>
             {blog.slice(0, 3).map((val) => (
               <div className='items flexSB'>
@@ -369,21 +374,21 @@ const Spa = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
           <div className='box last'>
             <h3>Have a Questions?</h3>
             <ul>
               <li>
                 <i className='fa fa-map'></i>
-                203 Fake St. Mountain View, San Francisco, California, USA
+                Comsats University, Park Rd, Chak Shehzad, Islamabad, Pakistan.
               </li>
               <li>
                 <i className='fa fa-phone-alt'></i>
-                +2 392 3929 210
+                +92090078601
               </li>
               <li>
                 <i className='fa fa-paper-plane'></i>
-                info@yourdomain.com
+                info@vision-x.com
               </li>
             </ul>
           </div>
@@ -391,7 +396,7 @@ const Spa = () => {
       </footer>
       <div className='legal'>
         <p>
-          Copyright ©2022 All rights reserved | This template is made with <i className='fa fa-heart'></i> by GorkhCoder
+          Copyright ©2022 All rights reserved |  Made with <i className='fa fa-heart'></i> by team Vision-X
         </p>
       </div>
   </>
