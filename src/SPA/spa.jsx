@@ -305,7 +305,11 @@ const Spa = () => {
             </form>
 
             <h3>Follow us here</h3>
-            <span>FACEBOOK TWITTER INSTAGRAM DRIBBBLE</span>
+            {/* <span>FACEBOOK TWITTER INSTAGRAM DRIBBBLE</span> */}
+            <i className='fab fa-facebook-f icon'></i>
+            <i className='fab fa-instagram icon'></i>
+            <i className='fab fa-twitter icon'></i>
+            <i className='fab fa-youtube icon'></i>
           </div>
         </div>
       </section>
@@ -344,7 +348,7 @@ const Spa = () => {
               <li>Contact us</li>
             </ul>
           </div>
-          <div className='box link'>
+          {/* <div className='box link'>
             <h3>Quick Links</h3>
             <ul>
               <li>Contact Us</li>
@@ -353,7 +357,7 @@ const Spa = () => {
               <li>Privacy</li>
               <li>Feedbacks</li>
             </ul>
-          </div>
+          </div> */}
           {/* <div className='box'>
             <h3>Recent Post</h3>
             {blog.slice(0, 3).map((val) => (
