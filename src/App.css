@@ -68,6 +68,12 @@ button:hover{
 .primary-btn:hover{
   cursor: pointer;
 }
+.start a{
+  color: #ffffff;
+}
+.start a:hover{
+  color: #000000;
+}
 
 
 

@@ -11,16 +11,16 @@ import Back from "../components/common/back/Back"
 
 
 const Spa = () => {
-    const map = 'https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3321.2057331445003!2d73.15440461446524!3d33.651830746173374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1661785351228!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" '
+  const map = 'https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3321.2057331445003!2d73.15440461446524!3d33.651830746173374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1661785351228!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" '
 
 
 
-    const [click, setClick] = useState(false)
+  const [click, setClick] = useState(false)
 
   return (
     <>
-    {/* HEADER */}
-    <section className='head'>
+      {/* HEADER */}
+      <section className='head'>
         <div className='container flexSB'>
           <div className='logo'>
             <h1>VISION-X</h1>
@@ -28,7 +28,7 @@ const Spa = () => {
           </div>
 
           <div className='social'>
-          <i className="fab fa-user-secret icon"></i>
+            <i className="fab fa-user-secret icon"></i>
             <i className='fab fa-facebook-f icon'></i>
             <i className='fab fa-instagram icon'></i>
             <i className='fab fa-twitter icon'></i>
@@ -44,39 +44,44 @@ const Spa = () => {
               <Link to='/'>Home</Link>
             </li> */}
             <li>
-              
+
               <a href="#home">Home</a>
             </li>
             <li>
               <a href="#about">About</a>
-              
+
             </li>
             <li>
-            <a href="#courses">Courses</a>
-              
+              <a href="#courses">Courses</a>
+
             </li>
             <li>
-            <a href="#services">Services</a>
-              
+              <a href="#services">Services</a>
+
             </li>
             <li>
-                <a href="#team">Team</a>
-              
+              <a href="#team">Team</a>
+
             </li>
             <li>
-            <a href="#contact">Contact</a>
-              
+              <a href="#contact">Contact</a>
+
             </li>
           </ul>
           <div className='start'>
-            <div className='button'>TEST PRODUCT</div>
-          </div>
-          <button className='toggle' onClick={() => setClick(!click)}>
-            {click ? <i className='fa fa-times'> </i> : <i className='fa fa-bars'></i>}
-          </button>
-        </nav>
-      </header>
-    {/* HERO */}
+            <div className='button'>
+              <a href="https://visionxgazekeyboard.netlify.app/" target="_blank" rel="noreferrer">
+                TEST PRODUCT
+              </a>
+                </div>
+            
+        </div>
+        <button className='toggle' onClick={() => setClick(!click)}>
+          {click ? <i className='fa fa-times'> </i> : <i className='fa fa-bars'></i>}
+        </button>
+      </nav>
+    </header>
+    {/* HERO */ }
     <section id = "home" className='hero'>
         <div className='container'>
           <div className='row'>
@@ -95,7 +100,7 @@ const Spa = () => {
         </div>
       </section>
       <div className='margin'></div>
-      {/* ABOUT SECTION */}
+  {/* ABOUT SECTION */ }
       <section id="about" className='aboutHome'>
         <div className='container flexSB'>
           <div className='left row'>
@@ -138,55 +143,55 @@ const Spa = () => {
           })}
         </div>
       </section>
-      {/* HABOUT + COURSES*/}
-      <section className='homeAbout'>
-        
-        <section id = "services" className='online'>
-        <div className='container'>
-          <Heading subtitle='SERVICES' title='Explore Our Main Services' />
-          <div className='content grid3'>
-            {online.map((val) => (
-              <div className='box'>
-                <div className='img'>
-                  <img src={val.cover} />
-                  <img src={val.hoverCover} alt='' className='show' />
-                </div>
-                <h1>{val.courseName}</h1>
-                {/* <span>{val.course}</span> */}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      </section>
-      {/* TESTIMONIAL */}
+  {/* HABOUT + COURSES*/ }
+  <section className='homeAbout'>
 
-      <section id = "team" className='testimonal padding'>
-        <div className='container'>
-          <Heading subtitle='TEAM' title='Our Successful Staff' />
-
-          <div className='content grid2'>
-            {testimonal.map((val) => (
-              <div className='items shadow'>
-                <div className='box flex'>
-                  <div className='img'>
-                    <img src={val.cover} alt='' />
-                    <i className='fa fa-quote-left icon'></i>
-                  </div>
-                  <div className='name'>
-                    <h2>{val.name}</h2>
-                    <span>{val.post}</span>
-                  </div>
-                </div>
-                <p>{val.desc}</p>
+    <section id="services" className='online'>
+      <div className='container'>
+        <Heading subtitle='SERVICES' title='Explore Our Main Services' />
+        <div className='content grid3'>
+          {online.map((val) => (
+            <div className='box'>
+              <div className='img'>
+                <img src={val.cover} />
+                <img src={val.hoverCover} alt='' className='show' />
               </div>
-            ))}
-          </div>
+              <h1>{val.courseName}</h1>
+              {/* <span>{val.course}</span> */}
+            </div>
+          ))}
         </div>
-      </section>
-      {/* BLOG */}
-      {/* <Back title='Blog Posts' /> */}
-      {/* <section className='blog padding'>
+      </div>
+    </section>
+  </section>
+  {/* TESTIMONIAL */ }
+
+  <section id="team" className='testimonal padding'>
+    <div className='container'>
+      <Heading subtitle='TEAM' title='Our Successful Staff' />
+
+      <div className='content grid2'>
+        {testimonal.map((val) => (
+          <div className='items shadow'>
+            <div className='box flex'>
+              <div className='img'>
+                <img src={val.cover} alt='' />
+                <i className='fa fa-quote-left icon'></i>
+              </div>
+              <div className='name'>
+                <h2>{val.name}</h2>
+                <span>{val.post}</span>
+              </div>
+            </div>
+            <p>{val.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+  {/* BLOG */ }
+  {/* <Back title='Blog Posts' /> */ }
+  {/* <section className='blog padding'>
         <div className='container grid2'>
         {blog.map((val) => (
         <div className='items shadow'>
@@ -215,7 +220,7 @@ const Spa = () => {
       ))}
         </div>
       </section> */}
-      {/* Contact Us */}
+  {/* Contact Us */ }
       
     <Heading subtitle='CONTACT US' title='In Case of Emergency' />
       <section id = "contact"className='contacts padding'>
@@ -264,7 +269,7 @@ const Spa = () => {
         </div>
       </section>
 
-      {/* footer */}
+  {/* footer */ }
       <section className='newletter'>
         <div className='container flexSB'>
           <div className='left row'>
