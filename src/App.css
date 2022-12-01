@@ -56,14 +56,20 @@ button {
 button i {
   margin-left: 20px;
 }
-button:hover {
-  box-shadow: none;
-}
+
 .primary-btn {
   background-color: #1eb2a6;
   color: #fff;
   cursor: pointer;
 }
+button:hover{
+  cursor: pointer!important;
+}
+.primary-btn:hover{
+  cursor: pointer;
+}
+
+
 
 /*------------global-----------*/
 #heading {

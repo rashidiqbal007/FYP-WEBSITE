@@ -92,6 +92,13 @@
     padding-right: 50px;
     color: #fff;
   }
+  .hero h1 {
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  
+  
   .hero #heading h3 {
     color: #fff;
   }
