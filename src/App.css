@@ -41,7 +41,7 @@ li {
 .row {
   width: 50%;
 }
-button {
+/* button {
   padding: 17px 30px;
   background-color: #fff;
   color: #1eb2a6;
@@ -52,21 +52,31 @@ button {
   cursor: pointer;
   box-shadow: 0 24px 36px -11px rgb(0 0 0 / 9%);
   transition: 0.5s;
-}
-button i {
+} */
+/* button i {
   margin-left: 20px;
+} */
+.spa-btn{
+  background-color: #1eb2a6;
+  color: #fff;
+  cursor: pointer !important;
+}
+.spa-btn:hover{
+  background-color: #fff;
+  color: #1eb2a6;
+  border: 1px solid #1eb2a6;
 }
 
 .primary-btn {
   background-color: #1eb2a6;
   color: #fff;
-  cursor: pointer;
-}
-button:hover{
   cursor: pointer!important;
 }
+/* button:hover{
+  cursor: pointer!important;
+} */
 .primary-btn:hover{
-  cursor: pointer;
+  cursor: pointer!important;
 }
 .start a{
   color: #ffffff;

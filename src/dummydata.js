@@ -9,7 +9,7 @@ export const homeAbout = [
     id: 1,
     cover: "https://img.icons8.com/ios/80/000000/diploma.png",
     title: "For Paralyzed Patients",
-    desc: "The proposed system allows the paralyzed users to communicate through blinking of eyes",
+    desc: "The proposed system allows the paralyzed users to communicate through their eyes",
   },
   {
     id: 1,

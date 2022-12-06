@@ -86,9 +86,9 @@ const Spa = () => {
         <div className='container'>
           <div className='row'>
             <Heading subtitle='WELCOME TO VISION-X' title='EXCEPTIONAL MEDICAL HEALTHCARE' />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
-            <div className='button'>
-              <button className='primary-btn' >
+            <p>Vision-X</p>
+            <div className='buttons'>
+              <button className='spa-btn' >
                 GET STARTED NOW <i className='fa fa-long-arrow-alt-right'></i>
               </button>
               <button>
