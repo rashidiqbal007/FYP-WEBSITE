@@ -1,12 +1,10 @@
 import React, { useState } from "react"
-import { Link } from "react-router-dom"
 import Heading from '../components/common/heading/Heading'
 import "./style.css"
 import { homeAbout } from "../dummydata"
 import { awrapper } from "../dummydata"
-import { coursesCard } from "../dummydata"
-import { online, testimonal, blog } from "../dummydata"
-import Back from "../components/common/back/Back"
+import { online, testimonal } from "../dummydata"
+
 
 
 
@@ -86,16 +84,17 @@ const Spa = () => {
         <div className='container'>
           <div className='row'>
             <Heading subtitle='WELCOME TO VISION-X' title='EXCEPTIONAL MEDICAL HEALTHCARE' />
-            <p>Vision-X</p>
-            <div className='buttons'>
-              <button className='spa-btn' >
+            {/* <p>Vision-X</p> */}
+           
+            {/* <div className='buttons'> */}
+              {/* <button className='spa-btn' >
                 GET STARTED NOW <i className='fa fa-long-arrow-alt-right'></i>
               </button>
               <button>
                 
                 TEST PRODUCT <i className='fa fa-long-arrow-alt-right'></i>
-              </button>
-            </div>
+              </button> */}
+            {/* </div> */}
           </div>
         </div>
       </section>
@@ -153,8 +152,8 @@ const Spa = () => {
           {online.map((val) => (
             <div className='box'>
               <div className='img'>
-                <img src={val.cover} />
-                <img src={val.hoverCover} alt='' className='show' />
+                <img src={val.cover} alt='cover'/>
+                <img src={val.hoverCover} alt='coverhover' className='show' />
               </div>
               <h1>{val.courseName}</h1>
               {/* <span>{val.course}</span> */}
