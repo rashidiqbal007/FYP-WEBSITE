@@ -69,7 +69,7 @@ const Spa = () => {
           <div className='start'>
             <div className='button'>
               {/* <a href="https://visionxgazekeyboard.netlify.app/" target="_blank" rel="noreferrer"> */}
-              <a href="https://visionxgazekeyboard.netlify.app/" target="_blank" rel="noreferrer">
+              <a href="http://localhost:3001" target="_blank" rel="noreferrer">
               
                 TEST PRODUCT
               </a>
